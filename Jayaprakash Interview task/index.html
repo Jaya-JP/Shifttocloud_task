@@ -12,7 +12,7 @@
 </head>
 <body>
      <!-- Header section -->
-      <header>
+      <header class="Header">
           <nav id="navbar">
                <ul class="left">
                     <div class="logo">
@@ -63,9 +63,10 @@
                <!-- Banner menu -->
 
                <div class="banner-menu">
+
                     <div class="b-menu">
                          <img src="./images/cloud.png" alt="">
-                         <h4>Scelerisque eliefend</h4>
+                         <h4>Files eget nunc lobortis</h4>
                     </div>
 
                     <div class="b-menu">
@@ -182,6 +183,9 @@
 
        <section>
           <div id="second">
+               <div class="video-imagge2">
+                    <img src="./images/video-play-icon.png" alt="">
+               </div>
                <img src="./images/bottom-banner.png" class="bot-img" alt="">
                <div class="bot-cont container">
                     <h1>dolore magna aliqua dolore magna aliqua!</h1>
@@ -236,7 +240,18 @@
               
                   
                   </div>
+
+                  <hr class="hr">
                <!--  -->
+                  <div class="horizontal-footer">
+                    <ul class="Hori-Footer">
+                         <li class="sec-foo s-foo"><a href="#"  >Home</a></li>
+                         <li class="sec-foo s-foo"><a href="#"  >Features</a></li>
+                         <li class="sec-foo s-foo"><a href="#"  >Pricing</a></li>
+                         <li class="sec-foo s-foo"><a href="#"  >FAQs</a></li>
+                         <li class="sec-foo "><a href="#"  >About</a></li>
+                       </ul>
+                  </div>
 
           </div>
 
@@ -251,14 +266,28 @@
      const menubar = document.getElementById('bar')
      const menu = document.querySelector(".menu-col")
 
+
+
      menubar.addEventListener("click" , () => {
-          
-          // menu.classList.remo
           menu.classList.toggle("menu-col")
           menu.classList.toggle("menu-coll")
-          console.log(document.querySelector(".menu-col"));
 
      })
+
+     function AddClass() {
+          const HEADER= document.querySelector('.Header'); 
+          if (window.matchMedia("(max-width: 991px)").matches) {
+               // HEADER.classList.toggle('Header');
+               HEADER.classList.add('Header-PF');
+               HEADER.classList.remove('Header');
+          } 
+          else{
+               HEADER.classList.add('Header');
+               HEADER.classList.remove('Header-PF');    
+          }
+     }
+     AddClass();
+     window.addEventListener('resize', AddClass);
 
 
 

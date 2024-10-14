@@ -13,11 +13,14 @@ a{
 li{
      list-style: none;
 }
-header{
-     background-color: #0f4f79;
+.Header{
+     background-color: #0f4f79 !important;
      padding: 8px;
+    
+     
 }
 #navbar{
+
      margin: 0px 7%;
      display: flex;
      justify-content: space-between;
@@ -234,6 +237,19 @@ header{
      margin-top: 50px;
      position: relative;
 }
+.video-imagge2{
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     right: 14%;
+     bottom: 45%;
+     border-radius: 50%;
+     z-index: 15;
+     
+}
+.video-imagge2 img{
+     width: 100%;
+}
 .bot-img{
      position: absolute;
      width: 100%;
@@ -268,7 +284,7 @@ header{
 }
 #footer{
      background-color: #20242f;
-     padding: 50px 0px;
+     padding: 30px 0px;
 
 }
 .Sec-footer{
@@ -297,7 +313,28 @@ header{
      margin: auto 8px;
      display: none !important; 
      cursor: pointer;
-     
+}
+.hr{
+     color: white;
+     margin-top: 20px;
+     /* width: 2px; */
+
+}
+.horizontal-footer{
+     margin-top: 10px;
+}
+.Hori-Footer{
+     display: flex;
+     gap: 5px;
+     justify-content: center;
+}
+.sec-foo{
+     padding-inline: 8px;
+     font-size: 12px;
+}
+
+.s-foo{
+     border-right: 2px solid white;
 }
 
 @media (max-width:991px){
@@ -334,7 +371,7 @@ header{
           gap: 20px;
      }
      .banner-menu{
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr;
           place-items: center;
      }
      .container .fast
@@ -354,17 +391,25 @@ header{
           padding: 0;
      }
 
-     .Sec-footer{
-          flex-direction: column;
-          gap: 50px;
-     }
+  
      .footer-sec{
           font-size: 14px;
      }
      .menu-coll{
           display: grid !important;
           gap: 5px;
+          padding-bottom: 10px;
      }
+     .Header-PF{
+          background: #0f4f79;
+          position: fixed;
+          width: 100%;
+          padding: 10px;
+          z-index: 110;
+
+     }
+     
+
 }
 
 @media (max-width:767px){
@@ -394,21 +439,29 @@ header{
      }
      #First{
           background: url("/images/top-banner.jpg") ;
-          align-items: center;
-          
+          position: relative;
+
      }
      #First .container{
-          margin:  0px 0px;
-          display: flex;
+
+          /* margin:  0px 7%; */
+          position: absolute;
           top: 0;
+          right: 0;
           left: 0;
-       
+          bottom: 0;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center; 
      }
      .fast{
-          font-size: 16px;
-          width: 80%;
-          margin: auto;
-          text-align: left;
+          font-size: 20px;
+          text-align: justify;
+     }
+     .banner-menu{
+          grid-template-columns: 1fr ;
+          place-items: center;
      }
 
      .bot-cont h1{
@@ -434,8 +487,19 @@ header{
           text-align: left;
 
      }
-     .menu-coll{
-          display: grid !important;
-          gap: 5px;
+     .Sec-footer{
+          flex-direction: column;
+          gap: 50px;
      }
+     #second{
+          background: linear-gradient(#e7f4fc, #f5fafe);
+     }
+     .video-imagge2{
+          display: none;
+     }
+     #second img{
+          display: none;
+     }
+  
+
 }
