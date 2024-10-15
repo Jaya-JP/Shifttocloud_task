@@ -18,7 +18,7 @@
                     <div class="logo">
                          <img src="./images/logo.jpg" alt="">
                     </div>
-                    <div class="menu">
+                    <div class="   menu">
                          <ul class="menu-col">
                               <li class="meni-list"><a href="">Reseller</a></li>
                               <li class="meni-list"><a href="">Products</a></li>
@@ -40,6 +40,37 @@
                   
                </ul>
           </nav>
+          <!-- Mobile Navbar -->
+          <nav class="Nav">
+               <div class="nav-cont">
+
+                    <div class="logo">
+                         <img src="./images/logo.jpg" alt="">
+                    </div>
+                    
+                    <div class="bar1">
+                         
+                         <a class="sign-in" href="">Sign In &nbsp;
+                              <i class="fa-solid fa-greater-than"></i>
+                         </a>
+                         <i class="fa-solid fa-bars" id="bar1"></i>
+                         
+                    </div>
+               </div>
+               <ul class="m-nav">
+
+                    <li class="meni-list"><a href="">Reseller</a></li>
+                    <li class="meni-list"><a href="">Products</a></li>
+                    <li class="meni-list"><a href="">Features</a></li>
+                    <li class="meni-list"><a href="">Video Tutorials</a></li>
+                    <li class="meni-list"><a href="">Free Tools</a></li>
+                    <li class="meni-list"><a href="">Knowledge Base</a></li>
+               </ul>
+          </nav>
+
+
+
+
       </header>
 
       <!-- Banner section  -->
@@ -65,32 +96,44 @@
                <div class="banner-menu">
 
                     <div class="b-menu">
-                         <img src="./images/CLOUD.png" alt="">
+                         <li  class=" sprite">
+                              <img src="./images/sprite.png" class="f-one sprite-img" alt="">
+                         </li>
                          <h4>Files eget nunc lobortis</h4>
                     </div>
 
                     <div class="b-menu">
-                         <img src="./images/OFFICE.png" alt="">
+                         <li  class=" sprite">
+                              <img src="./images/sprite.png" class="f-two sprite-img" alt="">
+                         </li>
                          <h4>Mattis nunc sed blandit</h4>
                     </div>
 
                     <div class="b-menu">
-                         <img src="./images/FILES.png" alt="">
+                         <li  class=" sprite">
+                              <img src="./images/sprite.png" class="f-three sprite-img" alt="">
+                         </li>
                          <h4>Mattis nunc sed blandit</h4>
                     </div>
 
                     <div class="b-menu">
-                         <img src="./images/FLODER.png" alt="">
+                         <li  class=" sprite">
+                              <img src="./images/sprite.png" class="f-four sprite-img" alt="">
+                         </li>
                          <h4>Files eget nunc lobortis</h4>
                     </div>
 
                     <div class="b-menu">
-                         <img src="./images/FLODERSECTION.png" alt="">
+                         <li  class=" sprite">
+                              <img src="./images/sprite.png" class="f-five sprite-img" alt="">
+                         </li>
                          <h4>Files eget nunc lobortis</h4>
                     </div>
 
                     <div class="b-menu">
-                         <img src="./images/OFFICE.png" alt="">
+                         <li  class=" sprite">
+                              <img src="./images/sprite.png" class="f-six sprite-img" alt="">
+                         </li>
                          <h4>Files eget nunc lobortis</h4>
                     </div>
                </div>
@@ -103,42 +146,59 @@
                <div class="container sec-menu">
 
                     <div class="b-menus border">
-                         <img src="./images/OVERVIEW.png" alt="">
+                         <li  class=" sprite1">
+                              <img src="./images/product.png" class="t-one sprite-img" alt="">
+                         </li>
+                         
                          <h4>Overview</h4>
                     </div>
 
                     <div class="b-menus">
-                         <img src="./images/FEATURE.png" alt="">
+                         <li  class=" sprite1">
+                              <img src="./images/product.png" class="t-two sprite-img" alt="">
+                         </li>
                          <h4>Features</h4>
                     </div>
 
                     <div class="b-menus">
-                         <img src="./images/HIW.png" alt="">
+                         <li  class=" sprite1">
+                              <img src="./images/product.png" class="t-three sprite-img" alt="">
+                         </li>
                          <h4>How it Works</h4>
                     </div>
 
                     <div class="b-menus">
-                         <img src="./images/USERMANUAL.png" alt="">
+                         <li  class=" sprite1">
+                              <img src="./images/product.png" class="t-four sprite-img" alt="">
+                         </li>
                          <h4>User Manuals</h4>
                     </div>
 
                     <div class="b-menus">
-                         <img src="./images/Q&A.png" alt="">
+                         <li  class=" sprite1">
+                              <img src="./images/product.png" class="t-five sprite-img" alt="">
+                         </li>
                          <h4>FAQ</h4>
                     </div>
 
                     <div class="b-menus">
-                         <img src="./images/VIDEOS.png" alt="">
+                         <li  class=" sprite1">
+                              <img src="./images/product.png" class="t-six sprite-img" alt="">
+                         </li>
                          <h4>Videos</h4>
                     </div>
 
                     <div class="b-menus">
-                         <img src="./images/PRICE.png" alt="">
+                         <li  class=" sprite1">
+                              <img src="./images/product.png" class="t-seven sprite-img" alt="">
+                         </li>
                          <h4>Pricing</h4>
                     </div>
                     
                     <div class="b-menus">
-                         <img src="./images/SSHOTS.png" alt="">
+                         <li  class=" sprite1">
+                              <img src="./images/product.png" class="t-eight sprite-img" alt="">
+                         </li>
                          <h4>Screenshots</h4>
                     </div>
                </div>
@@ -263,29 +323,29 @@
 
 <script>
 
-     const menubar = document.getElementById('bar')
-     const menu = document.querySelector(".menu-col")
+     const menubar = document.getElementById('bar1')
+     const menu = document.querySelector(".m-nav")
 
      menubar.addEventListener("click" , () => {
-          menu.classList.toggle("menu-col")
-          menu.classList.toggle("menu-coll")
+          menu.classList.toggle("m-nav")
+          menu.classList.toggle("m-navd")
 
      })
 
-     function AddClass() {
-          const HEADER= document.querySelector('.Header'); 
-          if (window.matchMedia("(max-width: 991px)").matches) {
-               // HEADER.classList.toggle('Header');
-               HEADER.classList.add('Header-PF');
-               HEADER.classList.remove('Header');
-          } 
-          else{
-               HEADER.classList.add('Header');
-               HEADER.classList.remove('Header-PF');    
-          }
-     }
-     AddClass();
-     window.addEventListener('resize', AddClass);
+     // function AddClass() {
+     //      const HEADER= document.querySelector('.Header'); 
+     //      if (window.matchMedia("(max-width: 991px)").matches) {
+     //           // HEADER.classList.toggle('Header');
+     //           HEADER.classList.add('Header-PF');
+     //           HEADER.classList.remove('Header');
+     //      } 
+     //      else{
+     //           HEADER.classList.add('Header');
+     //           HEADER.classList.remove('Header-PF');    
+     //      }
+     // }
+     // AddClass();
+     // window.addEventListener('resize', AddClass);
 
 
 

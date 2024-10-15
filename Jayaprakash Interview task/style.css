@@ -4,7 +4,9 @@
 *{
      padding: 0;
      margin: 0;
+     box-sizing: border-box;
 }
+
 a{
      text-decoration: none;
      color: white;
@@ -13,15 +15,67 @@ a{
 li{
      list-style: none;
 }
-.Header{
-     background-color: #0f4f79 !important;
-     padding: 8px;
-    
-     
-}
-#navbar{
 
-     margin: 0px 7%;
+.Nav{
+     background-color: #0f4f79 !important;
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     display: none;
+
+}
+.nav-cont{
+     background-color: #0f4f79 !important;
+     padding: 10px;
+     width: 100%;
+     display: flex;
+     left: 0;
+     right: 0;
+     top: 0;
+     margin: auto;
+     position: absolute;
+     z-index: 10;
+     justify-content: space-between;
+
+}
+
+.bar1{
+     display: flex;
+     gap: 10px;
+     height: max-content;
+}
+#bar1{
+     padding: 5px;
+     color: black;
+     background-color: #fff;
+     border-radius: 50%;
+     font-weight: 600;
+}
+.m-nav{
+     position: absolute;
+     display: none;
+}
+.m-navd{
+     padding: 0;
+     display: block;
+     position: absolute;
+     width: 100%;
+     z-index: 11;
+     left: 0;
+     top: 45px;
+     height: max-content;
+     background-color: #0f4f79;
+
+}
+.m-navd li{
+     margin-left: 50px;
+     padding-bottom: 3px;
+}
+
+
+#navbar{
+     background-color: #0f4f79;
+     padding: 10px 7%;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -140,32 +194,76 @@ li{
 .p span{
      font-size: 12px;
 }
+
 .b-menu{
      display: flex;
      gap: 15px;
      align-items: center;
+     justify-content: center;
+
 }
+.sprite{
+     position: relative;
+     height: 40px;
+     width: 40px;
+     overflow: hidden;
+     /* display: flex; */
+     justify-content: center;
+     padding: 10px;
+     border-radius: 50%;
+     border: 2px solid black;
+}
+.f-one{
+     top: 10px;
+}
+.f-two{
+     top: -55px;
+     left: 10px !important;
+}
+.f-three{
+     /* top: -130px; */
+     top: -128px;
+     left: 10px !important;
+}
+.f-four{
+     top: -25px;
+     left: 5px !important;
+}
+.f-five{
+     /* left: 6px; */
+     top: -233px;
+}
+.f-six{
+     top: -55px;
+     left: 10px !important;
+}
+.product{
+     position: relative;
+     width: 30px;
+     height: 30px;
+}
+
+.sprite-img{
+     position: absolute;
+     width: 70%;  
+     left: 4px;
+}
+
 .banner-menu{
      margin-top: 50px;
      display: grid;
      gap: 30px;
      grid-template-columns: 1fr 1fr 1fr;
 }
-.b-menu img{
-     height: 30px;
-     width: 30px;
-     padding: 8px;
-     border: 2px solid black;
-     border-radius: 50%;
-}
+
 .middle-nav{
      padding: 20px;
      display: flex;
-     gap: 20px;
+     gap: 10px;
 }
 .middle-nav .container{
      display: flex;
-     gap: 50px;
+     gap: 30px;
 }
 .b-menus{
      display: flex;
@@ -173,19 +271,52 @@ li{
      align-items: center ; 
      padding-bottom: 10px;
      cursor: pointer;
+     justify-content: start;
 }
 .border{
      border-bottom: 2px solid black;
 }
-.b-menus img{
-     width: 30px;
-     height: 30px;
+
+.sprite1{
+     position: relative;
+     height: 40px;
+     width: 40px;
+     overflow: hidden;
+     justify-content: center;
+     padding: 10px;
 }
+.t-one{
+     top: 10px;
+}
+.t-two{
+     top: -25px;
+}
+.t-three{
+     top: -50px;
+     /* scale: 1.4 !important; */
+}
+.t-four{
+     top: -90px;
+}
+.t-five{
+     top: -155px;
+}
+.t-six{
+     top: -193px;
+}
+.t-seven{
+     top: -230px;
+}
+.t-eight{
+     top: -270px;
+}
+
 #First{
-     background: url("./images/top-banner.jpg");
+     background: url("./images/top-banner.jpg") no-repeat;
+     background-size: cover;
      width: 100%;
      height: 220px;
-     box-shadow: 3px 3px 20px gray inset;
+     /* box-shadow: 3px 3px 20px gray inset; */
      position: relative;
 }
 #First .container{
@@ -224,6 +355,9 @@ li{
 }
 .left-para h1{
      color: #0596b6;
+}
+.left-para p ,.right-para p{
+     font-size: 18px;
 }
 .para p{
      color: gray;
@@ -303,7 +437,7 @@ li{
      margin-top: 10px;
      text-align: left;
 }
-.fa-bars{
+#bar{
      padding: 8px;
      background: #fff;
      color: black;
@@ -342,8 +476,13 @@ li{
      .menu-col{
           display: none;
      }
-  
-  
+     #navbar{
+          display: none;
+     }
+     .Nav{
+          display: flex;
+     }  
+
      .fa-bars{
           display: block !important; 
      }
@@ -353,6 +492,10 @@ li{
      }
      .sign-in{
           font-size: 12px;
+     }
+     #First{
+          background: none;
+          box-shadow: none;
      }
      .content{
           display: flex;
@@ -408,6 +551,12 @@ li{
           z-index: 110;
 
      }
+     .t-three{
+          top: -70px;
+     }
+     .t-four{
+          top: -110px;
+     }
      
 
 }
@@ -427,7 +576,12 @@ li{
           grid-template-columns: 1fr;
           place-items: center;
      }
-     
+     .t-three{
+          top: -70px;
+     }
+     .t-four{
+          top: -110px;
+     }
      .sec-menu{
           display: grid !important;
           grid-template-columns: 1fr 1fr;
@@ -437,14 +591,7 @@ li{
           grid-template-columns: 1fr;
           padding: 0px 20px;
      }
-     #First{
-          background: url("/images/top-banner.jpg") ;
-          position: relative;
-
-     }
      #First .container{
-
-          /* margin:  0px 7%; */
           position: absolute;
           top: 0;
           right: 0;
@@ -477,11 +624,9 @@ li{
      .bot-cont a{
           font-size: 12px;
      }
-
      .Sec-footer{
           flex-direction: column;
           gap: 30px;
-          /* margin-left: 50px; */
      }
      .Sec-footer h5{
           text-align: left;
@@ -500,6 +645,13 @@ li{
      #second img{
           display: none;
      }
-  
+}
 
+@media (max-width:450px){
+     .t-three{
+          top: -62px;
+     }
+     .t-four{
+          top: -105px;
+     }
 }
